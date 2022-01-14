@@ -1,0 +1,6 @@
+name: EffectStickHorizon
+author: Adonis
+version: 1.0.0
+api: 3.0.0
+main: EffectStick\EffectStickHorizon\main
+    
