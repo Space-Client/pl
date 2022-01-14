@@ -37,7 +37,7 @@ class EventListener implements Listener{
             $player = $event->getPlayer();
             $lastPlayerTime = $this->cooldown[$player->getName()] ?? 0;
             $timeNow = time();
-            if($timeNow - $lastPlayerTime >= 5){
+            if($timeNow - $lastPlayerTime => 5){
                 $player->addEffect($this->sticks[$idMeta][0]);
                 $player->getInventory()->removeItem($item->setCount( count: 1));
                 $this->cooldown[$player->getName()] = $timeNow;
